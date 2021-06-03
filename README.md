@@ -9,7 +9,7 @@ The TRUE Connector is composed of three components:
 * [Fiware Data Application](https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
 * [Usage-Control (UC) Data Application](https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app), a customized version of the Fraunhofer IESE base application for integrating the MyData Framework (a Usage Control Framework designed and implemented by Fraunhofer IESE) in a connector.
 
-![TRUE Connector Architecture](doc/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
+![TRUE Connector Architecture](docs/img/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
 
 | :books: [Documentation](https://true-connector.rtfd.io) | :whale: [Docker Hub](https://hub.docker.com/) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/fiware_reqs/roadmap.md) |
 | ------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -323,7 +323,7 @@ SELECT ?connectorUri WHERE { ?connectorUri a ids:BaseConnector . } '
 { At the moment, broker supports only multipart/mixed requests, this means that connector will have to be configured to mulitpar/mixed configuration. }
 
 ## Usage Control
-The TRUE Connector integrates the [Fraunhofer MyData Framework](https://www.mydata-control.de/) for implementing the Usage Control. Details about the PMP and PEP components can be found [here](doc/USAGE_CONTROL_RULES.md). 
+The TRUE Connector integrates the [Fraunhofer MyData Framework](https://www.mydata-control.de/) for implementing the Usage Control. Details about the PMP and PEP components can be found [here](docs/usage_control_rules.md). 
 
 ## Contract Negotiation - simple flow
 
