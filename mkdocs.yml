@@ -18,4 +18,6 @@ pages:
   - "Quick Start Guide": "quick_start_guide.md"
   - "Create new docker image": "docker_readme.md"
   - "User & Programmers Manual": "user_and_programmers_manual.md"
+  - "Usage Control Rules": "usage_control_rules.md"
+  - "Broker": "broker.md"
   - "Tutorial": "true_connector_tutorial.md"
