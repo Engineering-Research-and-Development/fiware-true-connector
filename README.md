@@ -11,7 +11,7 @@ The TRUE Connector is composed of three components:
 
 ![TRUE Connector Architecture](docs/img/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
 
-| :books: [Documentation](https://true-connector.rtfd.io) | :whale: [Docker Hub](https://hub.docker.com/) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/fiware_reqs/roadmap.md) |
+| :books: [Documentation](https://true-connector.rtfd.io) | :whale: [Docker Hub](https://hub.docker.com/) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/roadmap.md) |
 | ------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 
 ## How to Configurate and Run
@@ -32,6 +32,17 @@ server.ssl.key-store=/cert/ssl-server.jks
 Or leave default values, if certificate and its password are correct.
 
 ### Supported Identity Providers
+
+If it is needed to run the connector in developer mode please set the following properties as false:
+
+```
+CACHE_TOKEN=false
+FETCH_TOKEN_ON_STARTUP=false
+application.isEnabledDapsInteraction=false
+```
+
+This allow you to skip  the Daps interaction during the process in the development phase, otherwise you need to have a certificate provided from the CA offering Identity provider service.
+
 
 The TRUE Connector is able to interact with the following Identity Providers:
 
