@@ -1,13 +1,18 @@
 # TRUE CONNECTOR
+[![License: AGPL](https://img.shields.io/github/license/Engineering-Research-and-Development/fiware-true-connector.svg)](https://opensource.org/licenses/AGPL-3.0)
+<br/>
 **TRUE** (**TRU**sted **E**ngineering) **Connector** for the IDS (International Data Space) ecosystem
 
 The TRUE Connector is composed of three components:
 
 * [Execution Core Container (ECC)](https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container), open-source project designed by ENG. It is in charge of the data exchange through the IDS ecosystem representing data using the IDS Information Model and interacting with an external Identity Provider. It is also able to communicate with an IDS Broker for registering and querying information.
-* [Back-End (BE) Data Application](https://github.com/Engineering-Research-and-Development/market4.0-data_app_test_BE), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
+* [Fiware Data Application](https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
 * [Usage-Control (UC) Data Application](https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app), a customized version of the Fraunhofer IESE base application for integrating the MyData Framework (a Usage Control Framework designed and implemented by Fraunhofer IESE) in a connector.
 
 ![TRUE Connector Architecture](doc/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
+
+| :books: [Documentation](https://true-connector.rtfd.io) | :whale: [Docker Hub](https://hub.docker.com/) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/fiware_reqs/roadmap.md) |
+| ------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 
 ## How to Configurate and Run
 
@@ -323,13 +328,27 @@ The TRUE Connector integrates the [Fraunhofer MyData Framework](https://www.myda
 ## Contract Negotiation - simple flow
 
 For simple contract negotiation flow, with ContractAgreement read from file, please check following link
-[Data App Contract Negotiation](https://github.com/Engineering-Research-and-Development/market4.0-data_app_test_BE/blob/master/README.md#markdown-header-Contract-Negotiation-simple-flow) 
+[Data App Contract Negotiation](https://github.com/Engineering-Research-and-Development/true-connector-basic_data_app/blob/master/README.md#markdown-header-Contract-Negotiation-simple-flow) 
 
 
 ## License
-The TRUE Connector components are released following different licenses:
 
-* **Execution Core Container**, open-source distributed under the license AGPLv3
-* **BE Data APP**, open-source distributed under the license AGPLv3
-* **UC Data APP**, TBC
+The TRUE Connector is licensed under [Affero General Public License (GPL) version 3](./LICENSE).
 
+© 2020 Engineering Ingegneria Informatica S.p.A.
+
+
+### Are there any legal issues with AGPL 3.0? Is it safe for me to use?
+
+No problem in using a product licensed under AGPL 3.0. Issues with GPL (or AGPL) licenses are mostly related with the
+fact that different people assign different interpretations on the meaning of the term “derivate work” used in these
+licenses. Due to this, some people believe that there is a risk in just _using_ software under GPL or AGPL licenses
+(even without _modifying_ it).
+
+For the avoidance of doubt, the owners of this software licensed under an AGPL 3.0 license wish to make a clarifying
+public statement as follows:
+
+"Please note that software derived as a result of modifying the source code of this software in order to fix a bug or
+incorporate enhancements is considered a derivative work of the product. Software that merely uses or aggregates (i.e.
+links to) an otherwise unmodified version of existing software is not considered a derivative work, and therefore it
+does not need to be released as under the same license, or even released as open source."
