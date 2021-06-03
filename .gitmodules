@@ -4,6 +4,6 @@
 [submodule "uc"]
 	path = uc
 	url = https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app
-[submodule "data_app"]
-	path = data_app
+[submodule "dataApp"]
+	path = dataApp
 	url = https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app
