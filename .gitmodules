@@ -1,6 +1,6 @@
 [submodule "ecc"]
 	path = ecc
-	url = https://github.com/Engineering-Research-and-Development/market4.0-execution_core_container_business_logic
-[submodule "uc"]
+	url = https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container
+[submodule "usage control"]
 	path = uc
-	url = https://github.com/Engineering-Research-and-Development/market4.0-uc_data_app
+	url = https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app
