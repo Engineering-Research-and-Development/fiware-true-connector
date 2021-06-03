@@ -1,6 +1,9 @@
 [submodule "ecc"]
 	path = ecc
 	url = https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container
-[submodule "usage control"]
+[submodule "uc"]
 	path = uc
 	url = https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app
+[submodule "data_app"]
+	path = uc
+	url = https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app
