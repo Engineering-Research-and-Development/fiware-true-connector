@@ -1,4 +1,4 @@
-# TRUE Connecto Tutorial
+# TRUE Connector Tutorial
 
 This is a step-by-step tutorial that will introduce in detail how to exchange data in a trusted environment using the TRUE Connector
 
