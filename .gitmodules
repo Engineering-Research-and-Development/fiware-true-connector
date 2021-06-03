@@ -1,0 +1,6 @@
+[submodule "ecc"]
+	path = ecc
+	url = https://github.com/Engineering-Research-and-Development/market4.0-execution_core_container_business_logic
+[submodule "uc"]
+	path = uc
+	url = https://github.com/Engineering-Research-and-Development/market4.0-uc_data_app
