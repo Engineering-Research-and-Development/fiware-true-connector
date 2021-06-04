@@ -1,9 +1,13 @@
-# Welcome to TRUE Connector.
+# Welcome to FIWARE TRUE Connector (FTC in short)
 
-The ENG Execution Core Container, based on the IDS Base Connector, is the core component of an IDS Connector enabling:
-* the data exchange between connectors, using HTTPS, WS over HTTPS, IDSCP2 (beta)
-* interaction with the AISEC Fraunhofer DAPS Service for requiring and validating a token
+The FTC Execution Core Container is the core component of an IDS Connector enabling:
+* the data exchange between connectors, using several protocols like HTTP, HTTPS, WS over HTTPS, IDSCPv2
+* the data (IDS Message header and payload) representation using multipart/mixed, multipart/form and http-header
+* interaction with the several Identity Providers (Fraunhofer AISECv1, Fraunhofer AISECv2, Orbiter) and DAPS Service for requiring and validating a token
 * communication with the ENG Clearing House for registering transactions
+* the interaction with the IDS Metadata Broker 
+* the integration of the Usage Control App in order to enforce the contract rules.
+
 
 # Getting Started
 
