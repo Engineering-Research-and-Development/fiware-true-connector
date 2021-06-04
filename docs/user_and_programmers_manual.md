@@ -65,7 +65,7 @@ For Data Consumer, with provided docker-compose file:
 
 ## How to Exchange Data
 
-For details on request samples please check following link [Backend DataApp Usage](https://github.com/Engineering-Research-and-Development/market4.0-data_app_test_BE/blob/master/README.md)
+For details on request samples please check following link [Basic Data App Usage](https://github.com/Engineering-Research-and-Development/true-connector-basic_data_app/blob/master/README.md)
 
 Be sure to use correct configuration/ports for sender and receiver Data App and Execution Core Container (check .env file).
 
@@ -87,7 +87,7 @@ DataApp URL: https://{IPADDRESS}:8084/proxy
 
 ### WebSocket 
 
-On the following link, information regarding WebSocket Message Streamer implementation can be found here [WebSocket Message Streamer library](https://github.com/Engineering-Research-and-Development/market4.0-websocket_message_streamer).
+On the following link, information regarding WebSocket Message Streamer implementation can be found here [WebSocket Message Streamer library](https://github.com/Engineering-Research-and-Development/true-connector-websocket_message_streamer).
 
 ### IDSCP2
 Follow the REST endpoint or WS examples, put the server hostname/ip address in the Forward-To header (*wss/https://{RECEIVER_IP_ADDRESS/Hostname}:{WS_PUBLIC_PORT}*).
