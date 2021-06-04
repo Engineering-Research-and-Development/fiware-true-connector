@@ -1,7 +1,7 @@
 site_name: fiware TRUE Connector
-site_url: https://true-connector.readthedocs.org
+site_url: https://fiware-true-connector.readthedocs.io/en/latest/
 repo_url: https://github.com/Engineering-Research-and-Development/fiware-true-connector
-site_description: TRUE Connector Documentation
+site_description: Fiware TRUE Connector Documentation
 docs_dir: docs
 site_dir: html
 markdown_extensions: [toc, fenced_code]
@@ -12,7 +12,7 @@ extra_css:
     "https://www.fiware.org/style/fiware_readthedocs.css",
     "https://www.fiware.org/style/fiware_readthedocs_iot.css",
   ]
-google_analytics: ["UA-118589264-1", "true-connector.readthedocs.io"]
+google_analytics: ["UA-198735649-1", "fiware-true-connector.readthedocs.io"]
 pages:
   - "Home - Getting Started": "index.md"
   - "Quick Start Guide": "quick_start_guide.md"
