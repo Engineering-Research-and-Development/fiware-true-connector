@@ -1,4 +1,16 @@
-# Welcome to FIWARE TRUE Connector (FTC in short)
+# Welcome to FIWARE TRUE (TRUsted Engineering) Connector (FTC in short)
+
+The FIWARE TRUE Connector is a connector for the IDS (International Data Space) ecosystem. FTC enables the trusted data exchange in order to be active part of an IDS Ecosystem, a virtual data space leveraging existing standards and technologies, as well as governance models well-accepted in the data economy, to facilitate secure and standardized data exchange and data linkage in a trusted business ecosystem. The connector is compliant with the latest IDS specifications and can be easily customized to fit a wide spread of scenarios thanks to the internal separation of Execution Core Container and Data App. It is integrable with a lot of existing IDS services and totally configurable in terms of internal/external data format (multipart/mixed, multipart/form, http-header) and protocols (HTTP, HTTPS, Web Socket over HTTPS, IDSCPv2).
+
+![FIWARE TRUE Connector Architecture Overview](img/FTC_in_action.png?raw=true "FIWARE TRUE Connector Architecture Overview")
+
+The TRUE Connector is composed of three components:
+
+* [Execution Core Container (ECC)](https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container), open-source project designed by ENG. It is in charge of the data exchange through the IDS ecosystem representing data using the IDS Information Model and interacting with an external Identity Provider. It is also able to communicate with an IDS Broker for registering and querying information.
+* [FIWARE Data Application](https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
+* [Usage-Control (UC) Data Application](https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app), a customized version of the Fraunhofer IESE base application for integrating the MyData Framework (a Usage Control Framework designed and implemented by Fraunhofer IESE) in a connector.
+
+![FIWARE TRUE Connector Architecture](img/TRUE_Connector_Architecture.png?raw=true "FIWARE TRUE Connector Architecture")
 
 The FTC Execution Core Container is the core component of an IDS Connector enabling:
 * the data exchange between connectors, using several protocols like HTTP, HTTPS, WS over HTTPS, IDSCPv2
