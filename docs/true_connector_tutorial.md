@@ -1,6 +1,6 @@
-# TRUE Connector Tutorial
+# FIWARE TRUE Connector Tutorial
 
-This is a step-by-step tutorial that will introduce in detail how to exchange data in a trusted environment using the TRUE Connector.
+This is a step-by-step tutorial that will introduce in detail how to exchange data in a trusted environment using the FIWARE TRUE Connector.
 
 ## What is IDS?
 
@@ -9,7 +9,7 @@ It thereby provides a basis for creating smart-service scenarios and facilitatin
 
 ## Components
 
-The TRUE Connector is composed by:
+The FIWARE TRUE Connector is composed by:
 
 -   **Execution core container (ECC)**, representing the connector exchanging data.
 -   **FIWARE data app**, it is in charge of processing incoming request and provided the relative responses.
@@ -36,7 +36,7 @@ application.isEnabledDapsInteraction=false
 This allow you to skip  the Daps interaction during the process in the development phase, otherwise you need to have a certificate provided from the CA offering Identity provider service.
 
 
-The TRUE Connector is able to interact with the following Identity Providers:
+The FIWARE TRUE Connector is able to interact with the following Identity Providers:
 
 * **AISECv1** put the certificate in the *cert* folder, edit related settings (i.e., *application.keyStoreName*, *application.keyStorePassword*) (in the *.env*) and set the *application.dapsVersion* (in the *resources/application-docker.properties*) to *v1*
 * **AISECv2** put the certificate in the *cert* folder,edit related settings (i.e., *application.keyStoreName*, *application.keyStorePassword*) (in the *.env*) and set the *application.dapsVersion* (in the *resources/application-docker.properties*) to *v2*
