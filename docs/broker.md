@@ -1,7 +1,5 @@
 ## Broker
 
-The TRUE Connector integrates some endpoints for interacting with an IDS Broker:
-
 ### SelfDescription
 
 Self Description document, in json format, for connector, can be found at following URL - GET request
@@ -21,7 +19,7 @@ REST_ENABLE_HTTPS=true
 ```
 configured in .env file.
 
-In order to set different values for connector, based on connector role (Data Consumer/Data Provider), follwoing file and properties needs to be modified:
+In order to set different values for Self Description document, based on connector role (Data Consumer/Data Provider), following file and properties needs to be modified:
 
 ```
 ecc_resources_consumer/application-docker.properties
@@ -45,7 +43,9 @@ In order to register to broker, proxy endpoint can be used to send register requ
 <i>message</i> part or proxy request, ConnectorUpdateMessage as json must be created and set as value.</br>
 <i>payload</i> object of proxy request set self description json string of connector that we wish to register.
 
-Example of ConnectorUpdateMessage:
+Example of ConnectorUpdateMessage: 
+
+**Remark applicable for all Broker messages** - be sure to match senderAgent, issuerConnector and affectedConnector values from ConnectorUpdateMessage with the value in Self Description message
 
 ```
 {
@@ -178,7 +178,7 @@ Example of QueryMessage:
   },
   "ids:modelVersion" : "4.0.0",
   "ids:issuerConnector" : {
-    "@id" : "http://connectorURI"
+    "@id" : "https://eng.true-connector.com/"
   }
 }
 ```
@@ -186,7 +186,8 @@ Example of QueryMessage:
 Payload can be like following:
 
 ```
-SELECT ?connectorUri WHERE { ?connectorUri a ids:BaseConnector . } '
+PREFIX ids: <https://w3id.org/idsa/core/>
+SELECT ?connectorUri WHERE { ?connectorUri a ids:BaseConnector . }
 ```
 
 { At the moment, broker supports only multipart/mixed requests, this means that connector will have to be configured to mulitpar/mixed configuration. }

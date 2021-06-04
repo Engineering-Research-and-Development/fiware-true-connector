@@ -14,3 +14,11 @@ docker build -f Dockerfile -t johndoe/execution_core_container:1.0 .
 ```
 
 Be aware that using an existing Docker Hub username is required to push the image to Docker Hub
+
+Pushing docker image to remote repo can be performed using following command
+
+```
+docker push <registry-name/hub-user>/<repo-name>:<version-tag>
+```
+
+Same logic can be applied when creating Docker image for data app.
