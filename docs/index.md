@@ -34,5 +34,5 @@ You can find a complete docker-compose example in the the docker folder. If you 
 
 ```
 cd fiware-true-connector/docker/
-docker-compose up &
+docker-compose up -d
 ```
