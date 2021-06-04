@@ -13,6 +13,7 @@ The TRUE Connector is composed of three components:
 ![FIWARE TRUE Connector Architecture](img/TRUE_Connector_Architecture.png?raw=true "FIWARE TRUE Connector Architecture")
 
 The FTC Execution Core Container is the core component of an IDS Connector enabling:
+
 * the data exchange between connectors, using several protocols like HTTP, HTTPS, WS over HTTPS, IDSCPv2
 * the data (IDS Message header and payload) representation using multipart/mixed, multipart/form and http-header
 * interaction with the several Identity Providers (Fraunhofer AISECv1, Fraunhofer AISECv2, Orbiter) and DAPS Service for requiring and validating a token
