@@ -1,7 +1,7 @@
-site_name: fiware TRUE Connector
+site_name: FIWARE TRUE Connector
 site_url: https://fiware-true-connector.readthedocs.io/en/latest/
 repo_url: https://github.com/Engineering-Research-and-Development/fiware-true-connector
-site_description: Fiware TRUE Connector Documentation
+site_description: FIWARE TRUE Connector Documentation
 docs_dir: docs
 site_dir: html
 markdown_extensions: [toc, fenced_code]
@@ -15,9 +15,9 @@ extra_css:
 google_analytics: ["UA-198735649-1", "fiware-true-connector.readthedocs.io"]
 pages:
   - "Home - Getting Started": "index.md"
-  - "Quick Start Guide": "quick_start_guide.md"
+  - "Tutorial": "true_connector_tutorial.md"
   - "Create new docker image": "docker_readme.md"
   - "User & Programmers Manual": "user_and_programmers_manual.md"
   - "Usage Control Rules": "usage_control_rules.md"
   - "Broker": "broker.md"
-  - "Tutorial": "true_connector_tutorial.md"
+  

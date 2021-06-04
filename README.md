@@ -18,10 +18,17 @@ The TRUE Connector is composed of three components:
 
 ![FIWARE TRUE Connector Architecture](docs/img/TRUE_Connector_Architecture.png?raw=true "FIWARE TRUE Connector Architecture")
 
-| :books: [Documentation](https://fiware-true-connector.readthedocs.io/en/latest/) | :whale: [Docker Hub](https://hub.docker.com/) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/roadmap.md) |
-| -------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| :books: [Documentation](https://fiware-true-connector.readthedocs.io/en/latest/) | :whale: [Docker Hub](https://hub.docker.com/u/rdlabengpa) | :dart: [Roadmap](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/roadmap.md) |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 
+## Documentation Contents
 
+-   [Home - Getting Started](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/index.md)
+-   [Tutorial](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/true_connector_tutorial.md)
+-   [Create new docker image](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/docker_readme.md)
+-   [User & Programmers Manual](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/user_and_programmers_manual.md
+-   [Usage Control Rules](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/usage_control_rules.md)
+-   [Broker](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/broker.md)
 ## License
 
 The FIWARE TRUE Connector is licensed under [Affero General Public License (GPL) version 3](./LICENSE).

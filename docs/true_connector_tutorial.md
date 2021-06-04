@@ -12,9 +12,9 @@ It thereby provides a basis for creating smart-service scenarios and facilitatin
 The TRUE Connector is composed by:
 
 -   **Execution core container (ECC)**, representing the connector exchanging data.
--   **Fiware data app**, it is in charge of processing incoming request and provided the relative responses.
+-   **FIWARE data app**, it is in charge of processing incoming request and provided the relative responses.
 -   **Usage Control data app (UC)**, it will check if who are requesting the data has the grants to use that in a well defined policy.
-	(The Fiware TRUE Connector integrates the [Fraunhofer MyData Framework](https://www.mydata-control.de/) for implementing the Usage Control. Details about the PMP and PEP components can be found [here](usage_control_rules.md))
+	(The FIWARE TRUE Connector integrates the [Fraunhofer MyData Framework](https://www.mydata-control.de/) for implementing the Usage Control. Details about the PMP and PEP components can be found [here](usage_control_rules.md))
 
 ![TRUE Connector Architecture](img/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
 
@@ -47,7 +47,7 @@ The *application.dapsUrl* (in the *resources/application-docker.properties*) pro
 
 ### Clearing House
 The Clearing House is an intermediary that provides clearing and settlement services for all financial and data exchange transactions (logs all activities performed in the course of a data exchange).
-The Fiware TRUE Connector supports the communication with the ENG Clearing House for registering transactions, available as a service at:
+The FIWARE TRUE Connector supports the communication with the ENG Clearing House for registering transactions, available as a service at:
 
 ```
 CLEARING_HOUSE=http://109.232.32.193:8280/data
@@ -55,7 +55,7 @@ CLEARING_HOUSE=http://109.232.32.193:8280/data
 
 ### Broker
 The Broker is an intermediary that stores and manages information about the data sources available.
-The Fiware TRUE Connector integrates some endpoints for interacting with an IDS Broker described in [Broker](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/broker.md) section
+The FIWARE TRUE Connector integrates some endpoints for interacting with an IDS Broker described in [Broker](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/broker.md) section
 
 ## Flow
 
