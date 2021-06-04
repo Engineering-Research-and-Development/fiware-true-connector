@@ -26,7 +26,7 @@ The TRUE Connector is composed of three components:
 -   [Home - Getting Started](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/index.md)
 -   [Tutorial](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/true_connector_tutorial.md)
 -   [Create new docker image](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/docker_readme.md)
--   [User & Programmers Manual](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/user_and_programmers_manual.md
+-   [User & Programmers Manual](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/user_and_programmers_manual.md)
 -   [Usage Control Rules](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/usage_control_rules.md)
 -   [Broker](https://github.com/Engineering-Research-and-Development/fiware-true-connector/blob/master/docs/broker.md)
 ## License
