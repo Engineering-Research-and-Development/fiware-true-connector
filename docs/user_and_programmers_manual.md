@@ -1,56 +1,33 @@
-## How to Configurate and Run
+## How to Configure and Run
 
-The configuration should be performed customizing the following variables in the **.env** file:
+The configuration should be performed customizing the following variables in the **.env** file. 
 
-* **DATA_APP_ENDPOINT=192.168.56.1:8084/data** DataAPP endpoint for receiveing data (F endpoint in the above picture)
-* **MULTIPART_EDGE=mixed** DataAPP A-endpoint Content Type (choose *mixed* for Multipart/mixed or *form* for Multipart/form-data or *http-header* for Multipart/http-header) 
-* **MULTIPART_ECC=mixed** Execution Core Container B-endpoint Content Type (choose *mixed* for Multipart/mixed or *form* for Multipart/form-data or *http-header* for Multipart/http-header) 
+There are general properties for connector and specific properties for PROVIDER Configuration and CONSUMER Configuration, separated with corresponding labels. We tried to name properties as clear as possible, so that names are self descriptive, and that user can know, what this property does just by its name.
+
+* **MULTIPART_ECC=mixed** Execution Core Container B-endpoint Content Type (choose *mixed* for Multipart/mixed or *form* for Multipart/form-data or *http-header* for Multipart/http-header), make sure to disable WS_ECC and IDSCP2.
+* **WS_ECC=false** Execution Core Container B-endpoint - by default it is set to false, change this one to true for enabling wss communication between Connectors. There are two additional condition that needs to be set for WSS configuration - MULTIPART_ECC=mixed and IDSCP2=false
+* **IDSCP2=false** Execution Core Container B-endpoint - by default it is set to false, change this one to true for enabling IDSCPv2 protocol communication between Connectors. Be sure to disable WS_ECC, since connectors communicate using one of protocols - REST, WSS or IDSCPv2.
+
+* **Forward-To protocol validation** can be changed by editing **application.validateProtocol**. Default value is *true* and Forward-To URL must be set like http(https,wss)://example.com, if you choose *false* Forward-To URL can be set like http(https,wss)://example.com or just example.com and the protocol chosen (from application.properties)will be automatically set (it will be overwritten! example: http://example.com will be wss://example if you chose wss in the properties).
 * Edit external ports if need (default values: **8086** for **WS over HTTPS**, **8090** for **http**, **8889** for **B endpoint**, **29292** for **IDSCP2**)
-* Forward-To protocol validation can be changed by editing **application.validateProtocol**. Default value is *true* and Forward-To URL must be set like http(https,wss)://example.com, if you choose *false* Forward-To URL can be set like http(https,wss)://example.com or just example.com and the protocol chosen (from application.properties)will be automatically set (it will be overwritten! example: http://example.com will be wss://example if you chose wss in the properties).
-* For websocket configuration, in DataApp resource folders, configure *config.properties* file, set following fields
 
-```
-server.ssl.key-password=changeit
-server.ssl.key-store=/cert/ssl-server.jks
-```
-Or leave default values, if certificate and its password are correct.
+For trusted data exchange define in *.env* the SSL settings (default values):
 
-## Endpoints
-The TRUE Connector will use two protocols (http and https) as described by the Docker Compose File.
-It will expose the following endpoints:
-
-```
-/proxy 
-```
-to receive data incomming request, and based on received request, forward request to Execution Core Connector (the P endpoint in the above picture)
-
-``` 
-/data 
-```
-to receive data (IDS Message) from a sender connector (the B endpoint in the above picture)
-Furthermore, just for testing it will expose (http and https):
-
-```
-/about/version 
-```
-returns business logic version 
-
-## Configuration
-The ECC supports three different way to exchange data:
-
-*  **REST endpoints** enabled if *WS_EDGE=false* and *WS_ECC=false*
-*  **IDSCP2** enabled if *IDSCP2=true* and WS_ECC = false </br>For *WS_EDGE=true* (use websocket on the edge, false for REST on the edge) 
-*  **Web Socket over HTTPS** enabled if *WS_EDGE=true* and *WS_ECC=true* and *IDSCP2=false* for configuration which uses web socket on the edge and between connectors.
-
-For trusted data exchange define in *.env* the SSL settings:
-
-*  KEYSTORE-NAME=changeit(JKS format)
+*  KEYSTORE-NAME=ssl-server.jks
 *  KEY-PASSWORD=changeit
 *  KEYSTORE-PASSWORD=changeit
-*  ALIAS=changeit
+*  ALIAS=execution-core-container
 
-## How to Test
-The reachability could be verified using the following endpoints:
+If you have your own certificate, self signed or other, be sure to change those properties to match with other certificate. Keystore should be in jks format.
+
+Provider/Consumer configuration properties
+* **DATA_APP_ENDPOINT=https://ecc-provider:8083/data** DataAPP endpoint for receiveing data (F endpoint in the above picture)
+* **MULTIPART_EDGE=mixed** DataAPP A-endpoint Content Type (choose *mixed* for Multipart/mixed or *form* for Multipart/form-data or *http-header* for Multipart/http-header)
+* For websocket configuration, in DataApp resource folders, configure *config.properties* file, set following fields
+
+## Connector reachability - endpoints
+The TRUE Connector will use two protocols (http and https) as described by the Docker Compose File.
+Once Connector is started, the reachability could be verified using the following endpoints:
 
 *  **http://{IP_ADDRESS}:{HTTP_PUBLIC_PORT}/about/version**
 
@@ -61,6 +38,12 @@ Keeping the provided docker-compose, for Data Provider URL will be:
 For Data Consumer, with provided docker-compose file:
 
 *  **http://{IP_ADDRESS}:8091/about/version**
+
+For sending proxy requests:
+*  **http://{IP_ADDRESS}:8084/proxy**
+
+For receiving incoming requests on B-endpoint:
+*  **http://{IP_ADDRESS}:8889/data**
 
 
 ## How to Exchange Data
