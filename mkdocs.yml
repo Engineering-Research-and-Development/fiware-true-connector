@@ -16,7 +16,7 @@ google_analytics: ["UA-198735649-1", "fiware-true-connector.readthedocs.io"]
 pages:
   - "Home - Getting Started": "index.md"
   - "Tutorial": "true_connector_tutorial.md"
-  - "Create new docker image": "docker_readme.md"
+  - "Create New Docker Image": "docker_readme.md"
   - "User & Programmers Manual": "user_and_programmers_manual.md"
   - "Usage Control Rules": "usage_control_rules.md"
   - "Broker": "broker.md"
