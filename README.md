@@ -1,17 +1,17 @@
-# TRUE CONNECTOR
+# FIWARE TRUE CONNECTOR
 
 [![License: AGPL](https://img.shields.io/github/license/Engineering-Research-and-Development/fiware-true-connector.svg)](https://opensource.org/licenses/AGPL-3.0)
 [![CI](https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container/workflows/ECC/badge.svg)](https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container/actions/workflows/ECC.yml)
 [![Documentation badge](https://readthedocs.org/projects/fiware-true-connector/badge/?version=latest)](https://fiware-true-connector.readthedocs.io/en/latest/)
 <br/>
-**TRUE** (**TRU**sted **E**ngineering) **Connector** for the IDS (International Data Space) ecosystem
+**FIWARE TRUE** (**TRU**sted **E**ngineering) **Connector** (**FTC** in short) for the IDS (International Data Space) ecosystem.
 
 The FIWARE TRUE Connector enables the trusted data exchange in order to be active part of an IDS Ecosystem, a virtual data space leveraging existing standards and technologies, as well as governance models well-accepted in the data economy, to facilitate secure and standardized data exchange and data linkage in a trusted business ecosystem. The connector is compliant with the latest IDS specifications and can be easily customized to fit a wide spread of scenarios thanks to the internal separation of Execution Core Container and Data App. It is integrable with a lot of existing IDS services and totally configurable in terms of internal/external data format (multipart/mixed, multipart/form, http-header) and protocols (HTTP, HTTPS, Web Socket over HTTPS, IDSCPv2).
 
 The TRUE Connector is composed of three components:
 
 * [Execution Core Container (ECC)](https://github.com/Engineering-Research-and-Development/true-connector-execution_core_container), open-source project designed by ENG. It is in charge of the data exchange through the IDS ecosystem representing data using the IDS Information Model and interacting with an external Identity Provider. It is also able to communicate with an IDS Broker for registering and querying information.
-* [Fiware Data Application](https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
+* [FIWARE Data Application](https://github.com/Engineering-Research-and-Development/true-connector-fiware_data_app), open-source project designed by ENG. It represents a trivial data application for generating and consuming data on top of the ECC component.
 * [Usage-Control (UC) Data Application](https://github.com/Engineering-Research-and-Development/true-connector-uc_data_app), a customized version of the Fraunhofer IESE base application for integrating the MyData Framework (a Usage Control Framework designed and implemented by Fraunhofer IESE) in a connector.
 
 ![TRUE Connector Architecture](docs/img/TRUE_Connector_Architecture.png?raw=true "TRUE Connector Architecture")
