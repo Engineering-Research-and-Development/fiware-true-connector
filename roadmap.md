@@ -9,11 +9,17 @@ This section elaborates on proposed new features or tasks which are expected to 
 ## Short term
 
 The following list of features are planned to be addressed in the short term, and incorporated in the next release of the product planned for:
+* Performance improvement
+* Bug fixing
 
 ## Medium term
 
 The following list of features are planned to be addressed in the medium term, typically within the subsequent release(s) generated in the next 6 months after next planned release:
+* Data APP compliance
+* APP Store integrability
+* Usage Control, open-source framework integration 
 
 ## Long term
 
-The following list of features are proposals regarding the longer-term evolution of the product even though development of these features has not yet been scheduled for a release in the near future. Please feel free to contact us if you wish to get involved in the implementation or influence the roadmap
+The following list of features are proposals regarding the longer-term evolution of the product even though development of these features has not yet been scheduled for a release in the near future. Please feel free to contact us if you wish to get involved in the implementation or influence the roadmap:
+* ParIS integrability
