@@ -51,7 +51,7 @@ services:
       - ./uc-dataapp_resources:/config
 
   be-dataapp-provider:
-    image: rdlabengpa/ids_fiware_data_app:v0.0.1
+    image: rdlabengpa/ids_fiware_data_app:v0.0.2
     environment:
        - "SPRING_PROFILES_ACTIVE=docker"  
        - DATA_APP_MULTIPART=${PROVIDER_MULTIPART_EDGE}
@@ -122,7 +122,7 @@ services:
       - ./uc-dataapp_resources:/config
 
   be-dataapp-consumer:
-    image: rdlabengpa/ids_fiware_data_app:v0.0.1
+    image: rdlabengpa/ids_fiware_data_app:v0.0.2
     environment:
        - "SPRING_PROFILES_ACTIVE=docker"  
        - DATA_APP_MULTIPART=${CONSUMER_MULTIPART_EDGE}
